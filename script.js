@@ -1,6 +1,8 @@
 const userInput = document.querySelector("#date");
 userInput.max = new Date().toISOString().split("T")[0];
 
+const result = document.querySelector("#result");
+
 const button = document.querySelector(".btn");
 
 button.addEventListener("click", () => {
@@ -18,7 +20,7 @@ button.addEventListener("click", () => {
 
     let d3, m3, y3;
 
-    y3 = y2 = y1;
+    y3 = y2 - y1;
 
     if (m2 >= m1) {
         m3 = m2 - m1;
@@ -38,7 +40,7 @@ button.addEventListener("click", () => {
         y3--;
     }
     
-    console.log(y3, m3, d3);
+   result.innerHTML = `You are <span class="text-yellow-500">${y3}</span> years, <span class="text-yellow-500">${m3}</span> months and <span class="text-yellow-500">${d3}</span> days old`;
 })
 
 

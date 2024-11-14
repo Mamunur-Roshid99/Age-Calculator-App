@@ -10,14 +10,14 @@
 </head>
 <body class="bg-[#4E2ABB] h-screen text-white">
 
-    <div class="calculator py-28 px-10">
+    <div class="container py-28 px-10 lg:px-36">
         <h1 class="text-3xl font-bold tracking-wider text-yellow-400
         mb-5">Age Calculator</h1>
-        <div class="input-date bg-[#8C7AD7] p-5 rounded-lg flex justify-between">
+        <div class="input-date bg-[#8C7AD7] p-5 rounded-lg flex justify-between lg:w-[450px]">
             <input type="date" id="date" class="w-56 text-black">
             <button class="btn bg-yellow-500 px-6 rounded-lg text-black text-sm font-medium tracking-wider">Calculator</button>
         </div>
-        <p id="result"></p>
+        <p id="result" class="text-[20px] mt-5"></p>
     </div>
 
     <script src="script.js"></script>
